@@ -18,6 +18,12 @@ pip install -e .
     
 </details>
 
+## Usage
+
+```console
+pip install git+https://github.com/bareform/torchutils.git
+```
+
 ## Quick Start
 
 ```console
