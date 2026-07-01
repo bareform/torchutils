@@ -14,3 +14,10 @@ def set_seed(seed: int) -> None:
 
     torch.backends.cudnn.deterministic = True
     torch.backends.cudnn.benchmark = False
+
+def get_torch_dtype(precision: str) -> torch.dtype:
+    if precision == "fp16":
+        return torch.float16
+    if precision == "bf16":
+        return torch.bfloat16
+    return torch.float32
